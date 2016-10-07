@@ -1,0 +1,17 @@
+.fl-builder-content .wpsm-heading-wrap .wpsm-heading-text,
+.fl-builder-content .wpsm-heading-wrap .wpsm-subheading-text {
+	margin:0 ;
+	padding: 0;
+}
+
+.fl-builder-content .wpsm-heading-wrap .wpsm-heading-text,
+.fl-builder-content .wpsm-heading-wrap .wpsm-heading-spacer,
+.fl-builder-content .wpsm-heading-wrap .wpsm-subheading {
+	overflow: hidden;
+}
+
+.wpsm-heading-wrap .wpsm-headings-line {
+	display: block;
+	width:100%;
+	max-width: 100%;
+}
