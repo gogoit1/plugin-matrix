@@ -25,6 +25,16 @@ final class FLBuilderAdmin {
 
 		// Filters
 		add_filter( 'plugin_action_links_' . $basename,      __CLASS__ . '::render_plugin_action_links' );
+
+		add_action( 'admin_head',                            __CLASS__ . '::remove_banner' );
+	}
+
+	static public function remove_banner()
+	{
+		echo '<style>
+		    #tesseractplus-plugin-notice{ display:none; }
+		    } 
+		  </style>';
 	}
 
 	/**
