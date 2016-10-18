@@ -24,6 +24,7 @@ if(function_exists( 'is_plugin_active' ))
 {
 	if ( is_plugin_active( 'tesseract-plus-plugin/fl-builder.php' ) ) {
 				deactivate_plugins( 'beaver-builder-lite-version/fl-builder.php' );
+				deactivate_plugins( 'bb-plugin/fl-builder.php' );
 			}
 }
 require_once 'classes/class-fl-builder-loader.php';

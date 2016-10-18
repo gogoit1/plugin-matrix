@@ -72,7 +72,7 @@ final class FLBuilderAdmin {
 			//set the default values
 			update_site_option('_fl_builder_enabled_templates','core');
 			update_site_option('_fl_builder_user_templates_admin','1');
-			update_site_option('_fl_builder_templates_override','1');
+			update_site_option('_fl_builder_templates_override','0');
 			update_site_option('_fl_builder_templates_override_rows','1');
 			update_site_option('_fl_builder_templates_override_modules','1');		
 			update_site_option('_fl_builder_fl-help-video-enabled','0');		
