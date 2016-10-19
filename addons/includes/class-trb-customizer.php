@@ -126,6 +126,8 @@ class Tesseract_Remove_Branding_Customizer {
 
 	public $section_slug = 'tesseract_footer_right';
 
+	public $section_slug_centre = 'tesseract_footer_centre';
+
 
 
 	/**
@@ -172,13 +174,164 @@ class Tesseract_Remove_Branding_Customizer {
 
 		}
 
+		/*$wp_customize->add_section( $this->section_slug_centre, array(
+
+			'title'      => __('Footer Centre Block Content', 'tesseract-remove-branding'),
+
+			'priority'   => 6,
+
+			'panel'      => 'tesseract_footer_options'
+
+		) );
+
+
+
+			$wp_customize->add_setting( $this->section_slug_centre . '_content_header', array(
+
+				'default'           => '',
+
+				'type'           	=> 'option',
+
+				'transport'         => 'refresh',
+
+				'sanitize_callback' => '__return_false'
+
+				)
+
+			);
+
+
+
+				$wp_customize->add_control(
+
+					new Tesseract_Customize_Footer_Control(
+
+					$wp_customize,
+
+					$this->section_slug_centre . '_content_header_control',
+
+					array(
+
+						'label' =>  __('Choose the content to be displayed in the centre block of the footer area', 'tesseract-remove-branding' ),
+
+						'section' => $this->section_slug_centre,
+
+						'settings' => $this->section_slug_centre . '_content_header',
+
+						'priority' => 	1
+
+						)
+
+					)
+
+				);
+				$wp_customize->add_setting( $this->section_slug_centre . '_content', array(
+
+					'default'			=> 'html'
+
+			) );
+
+
+
+			$choices = array(
+
+				'nothing' 	 => __( 'Nothing', 'tesseract-remove-branding' ),
+
+				'html' 	 => __( 'HTML', 'tesseract-remove-branding' ),
+
+				'social'     => __( 'Social Icons', 'tesseract-remove-branding' ),
+
+				'search' 	 => __( 'Search Bar', 'tesseract-remove-branding' )
+
+			);
+
+
+				$wp_customize->add_control(
+
+					new WP_Customize_Control(
+
+						$wp_customize,
+
+						$this->section_slug_centre . '_content_control',
+
+						array(
+
+							'section'        => $this->section_slug_centre,
+
+							'settings'       => $this->section_slug_centre . '_content',
+
+							'type'           => 'radio',
+
+							'choices' 		 => $choices,
+
+							'priority' 		 => 2
+
+						)
+
+					)
+
+				);
+
+
+
+			$default_html = '<strong>Theme by <a href="http://tesseracttheme.com">Tesseract</a></strong>
+
+                        &nbsp;&nbsp;
+
+                        <strong>
+
+                        	<a href="http://tesseracttheme.com">
+
+                        		<img src="http://tylers-storage.s3-us-west-1.amazonaws.com/wp-content/uploads/2015/09/07185505/Drawing1.png" alt="Drawing" width="16" height="16" />
+
+                            </a>
+
+                        </strong>';
+
+
+
+			$wp_customize->add_setting( $this->section_slug_centre . '_content_html', array(
+
+				'sanitize_callback' => 'tesseract_sanitize_textarea_html',
+
+				'default' 			=> $default_html
+
+			) );
+
+
+
+				$wp_customize->add_control(
+
+					new WP_Customize_Control(
+
+						$wp_customize,
+
+						$this->section_slug_centre . '_content_control_type_html',
+
+						array(
+
+							'label'          => __( 'HTML', 'tesseract-remove-branding' ),
+
+							'section'        => $this->section_slug_centre,
+
+							'settings'       => $this->section_slug_centre . '_content_html',
+
+							'type'           => 'textarea',
+
+							'priority' 		 => 4,
+
+						)
+
+					)
+
+				);*/
 
 
 		$wp_customize->add_section( $this->section_slug, array(
 
 			'title'      => __('Footer Right Block Content', 'tesseract-remove-branding'),
 
-			'priority'   => 6,
+			'priority'   => 7,
 
 			'panel'      => 'tesseract_footer_options'
 

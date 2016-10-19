@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Tesseract Plus Plugin
  * Plugin URI: https://www.tesseractplus.com
- * Description: A drag and drop frontend WordPress page builder plugin that works with almost any theme! Now with Designer Plus and Unbrading both in combination, to provide great features for you.
- * Version: 1.8.1
+ * Description: A drag and drop frontend WordPress page builder plugin that works with almost any theme! This is a white label product based on Beaver Builder’s agency package.
+ * Version: 1.8.2
  * Author: The Tesseract Plus Team
  * Author URI: https://www.tesseractplus.com
  * Copyright: (c) 2014 Tesseract Plus
